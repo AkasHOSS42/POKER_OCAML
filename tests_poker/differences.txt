@@ -1,0 +1,7 @@
+Les resultats des tests sont exactement les memes, excepte pour les tests
+
+26 : mon programme trouve 0.848269933376
+               au lieu de 0.847388781431
+
+27 : mon programme trouve 0.53718124819
+     	       au lieu de 0.534800362552

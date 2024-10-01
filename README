@@ -1,0 +1,46 @@
+HOSSAIN Akash L3 MI
+
+Le code source se compile avec la commande make.
+On peut se debarasser des fichiers inutiles generes par la
+compilation avec la commande make clean (ces fichiers
+.cmo sont par contre necessaires pour les tests en top-level).
+Comme demande dans le sujet, l'executable s'appelle compute.
+On peut aussi produire computeOpt avec la commande make opt.
+ocamlopt sera alors utilise, pour un temps d'execution plus rapide.
+Il prend en argument un nom de fichier ayant le format qui respecte le
+sujet, et affiche les resultats.
+
+Les modules du programme sont les suivants :
+    -Construction donne les declarations de types
+    et les manipulations qu'on est autorises a faire sur
+    un certain type "potentiel" qui represente les mains.
+
+    -Compute donne la fonction
+    pour extraire une combinaison d'un potentiel.
+
+    -Compare donne la fonction pour comparer deux potentiels.
+
+    -Probas donne les fonctions de calcul de probabilite
+
+    -main.ml gere la lecture de fichiers et l'affichage des resultats
+
+Je fournis les fichiers test1 a test6 pour tester compute.
+PS : vos tests etant mis en ligne, je garde mes tests dans le
+repertoire courant et je mets les votres dans le repertoire
+tests_poker, avec l'executable compute et le fichier
+differences.txt qui donne mes resultats sur ces tests.
+
+
+Je fournis aussi le fichier bacASable.ml, ou vous etes libre de manipuler
+des potentiels dans le top-level (il faut faire un make avant).
+
+
+J'ai de plus code la fonction proba_multiple pour la calculette a plusieurs joueurs.
+Elle est dans extension.ml, et peut se tester dans le top-level
+sur le fichier testExtension.ml, ou j'ai deja mis quelques tests (il faut faire un make avant).
+Je recommande de lire extension.pdf d'abord, qui explique ce que je fais,
+avec un raisonnement mathematique sur les probabilites.
+
+La premiere section explique une optimisation que j'utilise pour parcourir moins de cas.
+La seconde donne une seconde optimisation et donne une idee de la complexite de mon programme.
+La derniere donne mes resultats en pratique, et comment j'ai pu contourner certains problemes.
